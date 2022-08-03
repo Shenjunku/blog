@@ -13,11 +13,17 @@ module.exports = {
     theme: 'reco',
     title: '随心所欲',
     description: '自律、自信、坚持，加油',
-    
     themeConfig: {
         type: 'blog',
         authorAvatar: '/assets/head.jpeg',
         logo: '/assets/head.jpeg',
+        subSidebar: 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
+        // 最后更新时间
+        lastUpdated: 'Last Updated',
+        author: '沈',//设置全局作者姓名
+        huawei: false,//首页可以显示 “华为” 文案
+        // 项目开始时间，只填写年份
+        startYear: '2022',
         nav: [
             { text: 'Home', link: '/', icon: 'reco-home' },
             { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },

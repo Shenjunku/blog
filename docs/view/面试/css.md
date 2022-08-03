@@ -1,6 +1,7 @@
 ---
 title: CSS篇
 date: 2022-8-02
+sidebar: 'auto'
 categories:
  - CSS
 tags:

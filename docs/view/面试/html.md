@@ -1,6 +1,7 @@
 ---
 title: HTML篇
 date: 2022-8-01
+sidebar: 'auto'
 categories:
  - HTML
 tags:
