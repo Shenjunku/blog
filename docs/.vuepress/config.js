@@ -9,7 +9,7 @@
 //     }
 //   }
 module.exports = {
-    // base: '/blog/',
+    base: '/blog/',
     theme: 'reco',
     title: '随心所欲',
     description: '自律、自信、坚持，加油',
@@ -18,6 +18,15 @@ module.exports = {
         authorAvatar: '/assets/head.jpeg',
         logo: '/assets/head.jpeg',
         subSidebar: 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
+        sidebar: {
+            '/view/': [
+                {
+                    title: '面试',
+                    collapsable: true,
+                    children: ['面试/css', '面试/js',]
+                },
+            ]
+        },
         // 最后更新时间
         lastUpdated: 'Last Updated',
         author: '沈',//设置全局作者姓名
@@ -60,5 +69,16 @@ module.exports = {
                 { icon: 'reco-npm', link: 'https://www.npmjs.com/~reco_luan' }
             ]
         }
-    }
+    },
+    plugins: [
+        [
+            "vuepress-plugin-live2d",
+            {
+                modelName: ["z16", "Epsilon2.1", "izumi", "koharu", "shizuku", "miku", "hijiki", "tororo"],
+                mobileShow: true,
+                position: "left"
+
+            }
+        ]
+    ]
 }

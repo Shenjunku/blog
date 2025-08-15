@@ -3,7 +3,7 @@ title: js篇
 date: 2022-8-02
 sidebar: 'auto'
 categories:
- - js
+ - 面试
 tags:
  - 面试
 ---
@@ -13,7 +13,7 @@ tags:
 
 var 变量提升
 
-```
+``` javascript
 var a='沈'
 等于下方的代码
 var a;
@@ -32,7 +32,7 @@ const 具有let的特性，声明的基本类型后不能改变值，但是如�
 
 执行上下文是当前 JavaScript 代码被解析和执行时所在环境的抽象概念
 
-```
+``` javascript
 ExecutionContext = {  
   ThisBinding = <this value>,     // 确定this 
   LexicalEnvironment = { ... },   // 词法环境
@@ -71,14 +71,14 @@ Null类型也只有一个值，即null。null用来表示尚未存在的对象,�
 
 ##### 函数声明
 
-```
+``` javascript
 //ES5
 function getSum(){}
 ```
 
 ##### 函数表达式
 
-```
+``` javascript
 //ES5
 var getSum=function(){}
 //ES6
@@ -87,7 +87,7 @@ let getSum=()=>{}
 
 ##### 构造函数
 
-```
+``` javascript
 const getSum = new Function('a', 'b' , 'return a + b')
 ```
 
@@ -97,7 +97,7 @@ const getSum = new Function('a', 'b' , 'return a + b')
 | 访问范围 | 函数内部和函数父级作用域 | 函数内部       |
 | 函数名   | 不能没有                 | 可以没有       |
 
-```
+``` javascript
  test() //正常访问
  function test(){}  //预提升
  
@@ -135,7 +135,7 @@ const getSum = new Function('a', 'b' , 'return a + b')
 
 - 单例模式
 
-  ```
+  ``` javascript
   单例模式是一种常见的涉及模式，它保证了一个类只有一个实例。实现方法一般是先判断实例是否存在，如果存在就直接返回，否则就创建了再返回。单例模式的好处就是避免了重复实例化带来的内存开销
   // 单例模式
   function Singleton(){
@@ -159,11 +159,11 @@ const getSum = new Function('a', 'b' , 'return a + b')
   var sb = Singleton.getInstance();
   console.log(sa === sb); // true
   console.log(sa.data); // 'singleton'
-  ```
+  ``` 
 
 - 封装私有属性和方法
 
-  ```
+  ``` javascript
   // 模拟私有属性
   function getGeneratorFunc () {
     var _name = 'John';
@@ -191,7 +191,7 @@ const getSum = new Function('a', 'b' , 'return a + b')
 
 - 隐式绑定: 满足 XXX.fn() 格式，fn 的 this 指向 XXX。如果存在链式调用， this 永远指向最后调用它的那个对象 隐式绑定丢失：起函数别名，通过别名运行；函数作为参数会造成隐式绑定丢失。
 
-  ```
+  ``` javascript
      
      function foo1() {
           console.log(this.a);
@@ -220,7 +220,7 @@ const getSum = new Function('a', 'b' , 'return a + b')
 
 - 箭头函数绑定: 箭头函数没有 this ，箭头函数的 this 始终指向函数定义时的 this，而非执行时
 
-  ```
+  ``` javascript
   var name = "windowsName";
   
       var a = {
@@ -254,19 +254,19 @@ const getSum = new Function('a', 'b' , 'return a + b')
 
 1、创建一个新的空对象 
 
-```
+``` javascript
 var obj={}
 ```
 
 2、设置新对象的原型__proto__属性指向构造函数的pototype对象
 
-```
+``` javascript
 obj.__proto__=Class.prototype
 ```
 
 3、构造函数的this赋值给新对象（即this指向新对象）
 
-```
+``` javascript
 var ret=Class.apply(obj,arguments)
 ```
 
@@ -285,7 +285,7 @@ return ret instanceof Object ? ret : obj;
 
 `apply`和`call`的区别是`call`方法接受的是若干个参数列表，而`apply`接收的是一个包含多个参数的数组。
 
-```
+``` javascript
 fun.call(thisArg[, arg1[, arg2[, ...]]])
 fun.apply(thisArg, [argsArray])
 立即执行
@@ -293,7 +293,7 @@ fun.apply(thisArg, [argsArray])
 
 而bind()方法创建一个新的函数, 当被调用时，将其this关键字设置为提供的值，在调用新函数时，在任何提供之前提供一个给定的参数序列。
 
-```
+``` javascript
 var bindFn = fun.bind(thisArg[, arg1[, arg2[, ...]]])
 bindFn()
 可以自己确定什么时候执行
@@ -303,7 +303,7 @@ bindFn()
 
 call继承
 
-```
+``` javascript
 function person(name){
     this.name = name
 }
@@ -318,7 +318,7 @@ console.log(me.name,me.age);             // '海洋饼干' '男'
 
 合并数组 apply()
 
-```
+``` javascript
 var a = [1,2,3];
 var b = [4,5,6];
 [].push.apply(a,b);    // 借用数组的push方法 等价 a.push(4,5,6);
@@ -327,7 +327,7 @@ console.log(a);        // [1, 2, 3, 4, 5, 6]
 
 取数组的最大值和最小值apply()
 
-```
+``` javascript
 var num = [6,9,-3,-5];
 console.log(Math.max.apply(Math,num)); // 9  等价  console.log(Math.max(6,9,-3,-5));
 console.log(Math.min.apply(Math,num)); // -5 等价  console.log(Math.min(6,9,-3,-5));
@@ -335,7 +335,7 @@ console.log(Math.min.apply(Math,num)); // -5 等价  console.log(Math.min(6,9,-3
 
 可以将一个类似（伪）数组的对象（比如arguments对象）转为真正的数组apply()
 
-```
+``` javascript
 var ArrayLike = { // 一个类似数组的对象
     0: 'a',
     1: 'b',
@@ -352,7 +352,7 @@ Array.prototype.slice.apply({length: 1}) // [undefined]
 
 bind绑定
 
-```
+``` javascript
 var fun ;
 var obj = {
     a : 1,
@@ -373,7 +373,7 @@ fun.call(obj1);    // 1  call ,apply等绑定 无法修改
 
 原型是一个对象，里面是一些属性和方法，每个对象都有隐式原型__proto__属性,该属性指向它的构造函数的显示原型prototype属性
 
-```
+``` javascript
   let  cat={
         name:'喵喵'
     }
@@ -396,7 +396,7 @@ fun.call(obj1);    // 1  call ,apply等绑定 无法修改
 
  如果你去某个对象查找一个不存在的属性和方法，那么它就会去隐式原型__proto__（或者构造函数的显示原型prototype）去寻找上方的  ，寻找的过程就是原型链
 
-```
+``` javascript
     //原型继承
     function User(username,password){
         this.username=username;
@@ -473,7 +473,7 @@ js引擎存在monitoring process进程，会持续不断的检查主线程执行
 
 事件委托是利用的事件冒泡的原理，把事件绑定到需要处理元素的父亲元素上，如果要给下方的li绑定事件，每个都需要绑定，如果绑定给ul父元素，只用绑定一次，只操作了一次 DOM ，提高了程序的性能。
 
-```
+``` javascript
 <ul>
     <li>111</li>
     <li>222</li>
@@ -491,7 +491,7 @@ js引擎存在monitoring process进程，会持续不断的检查主线程执行
 3. 监听`onreadystatechange`事件，当`readystate`等于4时返回`responseText`;
 4. 调用send方法传递参数。
 
-```
+``` javascript
  function ajaxHttpRequestFunc(){
 		let xmlHttpRequest;  // 创建XMLHttpRequest对象，即一个用于保存异步调用对象的变量
 		if(window.ActiveXObject){ // IE浏览器的创建方式
