@@ -79,6 +79,8 @@ module.exports = {
                 position: "left"
 
             }
-        ]
+        ],
+        ["cursor-effects"],
+         ["go-top"]
     ]
 }
