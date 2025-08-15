@@ -9,7 +9,7 @@
 //     }
 //   }
 module.exports = {
-    base: '/blog/',
+    // base: '/blog/',
     theme: 'reco',
     title: '随心所欲',
     description: '自律、自信、坚持，加油',
