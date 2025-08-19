@@ -21,9 +21,9 @@ module.exports = {
         sidebar: {
             '/view/': [
                 {
-                    title: '面试',
+                    title: '前端',
                     collapsable: true,
-                    children: ['面试/css', '面试/js',]
+                    children: ['前端/css', '前端/js','前端/html']
                 },
             ]
         },
