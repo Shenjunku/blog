@@ -23,7 +23,13 @@ module.exports = {
                 {
                     title: '前端',
                     collapsable: true,
-                    children: ['前端/css', '前端/js','前端/html']
+                    children: ['前端/css', '前端/js', '前端/html','前端/计算机网络','前端/游览器缓存','前端/websocket']
+
+                },
+                {
+                    title: 'vue',
+                    collapsable: true,
+                    children: ['vue/vue2', 'vue/vue3', 'vue/vue2和3的区别']
                 },
             ]
         },
@@ -70,6 +76,7 @@ module.exports = {
             ]
         }
     },
+
     plugins: [
         [
             "vuepress-plugin-live2d",
@@ -81,6 +88,6 @@ module.exports = {
             }
         ],
         ["cursor-effects"],
-         ["go-top"]
+        //  ["go-top"]
     ]
 }
