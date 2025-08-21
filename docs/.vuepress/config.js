@@ -23,13 +23,25 @@ module.exports = {
                 {
                     title: '前端',
                     collapsable: true,
-                    children: ['前端/css', '前端/js', '前端/html','前端/计算机网络','前端/游览器缓存','前端/websocket']
+                    children: ['前端/css', '前端/js', '前端/html', '前端/计算机网络', '前端/游览器缓存', '前端/websocket']
 
                 },
                 {
                     title: 'vue',
                     collapsable: true,
                     children: ['vue/vue2', 'vue/vue3', 'vue/vue2和3的区别']
+                },
+                {
+                    title: '小程序',
+                    collapsable: true,
+                    children: ['小程序/微信小程序',]
+                },
+                {
+                    title: 'webpack配置',
+                    collapsable: true,
+                    children: ['webpack配置/webpack介绍', 'webpack配置/webpack之Loader', 'webpack配置/webpack之Plugin', 'webpack配置/webpack之入口和出口', 'webpack配置/webpack汇总']
+
+
                 },
             ]
         },
