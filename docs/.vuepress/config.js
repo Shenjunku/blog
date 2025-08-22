@@ -36,6 +36,11 @@ module.exports = {
                     collapsable: true,
                     children: ['小程序/微信小程序',]
                 },
+                 {
+                    title: 'vite',
+                    collapsable: true,
+                    children: ['vite/vite',]
+                },
                 {
                     title: 'webpack配置',
                     collapsable: true,

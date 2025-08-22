@@ -417,11 +417,11 @@ fun.call(obj1);    // 1  call ,apply等绑定 无法修改
     admin并没有login方法，他便向__proto上去寻找，admin.__proto__等于Admin.prototype,Admin的原型等于User,在User中找到了login方法，向上寻找的过程形成了原型链
 ```
 
-![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c631b657ca62427a8bdef1a2c145346a~tplv-k3u1fbpfcp-watermark.awebp)
+![img](/assets/1.webp)
 
-![img](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/adede89e51c04a2b90beef8cb1cb848d~tplv-k3u1fbpfcp-watermark.awebp)
+![img](/assets/2.webp)
 
-![img](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1ead8002adf6487ba7c080c81029e1e3~tplv-k3u1fbpfcp-watermark.awebp)
+![img](/assets/3.webp)
 
 原型链的顶层是Object，Object.prototype的隐式原型指向null,为了避免死循环而设置
 
@@ -446,8 +446,7 @@ js引擎存在monitoring process进程，会持续不断的检查主线程执行
 - 宏任务(macro-task)：整体代码script、setTimeOut、setInterval
 - 微任务(mincro-task)：promise.then、promise.nextTick(node)
 
-![img](https://upload-images.jianshu.io/upload_images/4820992-82913323252fde95.png?imageMogr2/auto-orient/strip|imageView2/2/w/863/format/webp)
-
+![img](/assets/4.webp)
 ##### 事件冒泡
 
 事件冒泡可以形象地比喻为把一颗石头投入水中，泡泡会一直从水底冒出水面。也就是说，事件会从最内层的元素开始发生，一直向上传播，直到document对象。
@@ -550,21 +549,3 @@ forEach()方法不会返回执行结果，而是undefined。也就是说，forEa
 - filter() 过滤原始数组，返回新数组
 - reduce()  为数组提供累加器，合并为一个值
 
-#### 浏览器从输入url到渲染页面，发生了什么？
-
-##### 通过DNS解析域名的实际IP地址
-
-##### 检查浏览器是否有缓存
-
-##### 与服务器建立 TCP 连接。
-
-##### 发送HTTP请求
-
-##### 服务器处理请求并返回
-
-##### 浏览器解析渲染页面
-
-- 解析HTML形成DOM树
-- 解析CSS形成CSSOM 树
-- 合并DOM树和CSSOM树形成渲染树
-- 浏览器开始渲染并绘制页面
