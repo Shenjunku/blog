@@ -18,6 +18,7 @@ module.exports = {
         authorAvatar: '/assets/head.jpeg',
         logo: '/assets/head.jpeg',
         subSidebar: 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
+         activeHeaderLinks: false, // 默认值：true
         sidebar: {
             '/view/': [
                 {
@@ -36,7 +37,7 @@ module.exports = {
                     collapsable: true,
                     children: ['小程序/微信小程序',]
                 },
-                 {
+                {
                     title: 'vite',
                     collapsable: true,
                     children: ['vite/vite',]
@@ -49,10 +50,10 @@ module.exports = {
                 {
                     title: 'TS',
                     collapsable: true,
-                    children: ['TS/TS介绍', 'TS/TS类型','TS/TS编译选项']
+                    children: ['TS/TS介绍', 'TS/TS类型', 'TS/TS编译选项']
                 },
 
- 
+
             ]
         },
         // 最后更新时间
@@ -98,7 +99,6 @@ module.exports = {
             ]
         }
     },
-
     plugins: [
         [
             "vuepress-plugin-live2d",

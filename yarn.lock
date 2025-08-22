@@ -1495,10 +1495,10 @@
     valine "^1.4.18"
     vssue "^1.4.6"
 
-"@vuepress-reco/vuepress-plugin-pagation@^1.6.13":
-  version "1.6.13"
-  resolved "https://registry.npmjs.org/@vuepress-reco/vuepress-plugin-pagation/-/vuepress-plugin-pagation-1.6.13.tgz"
-  integrity sha512-6XPFCYFdMPao769TBA5lX0vAuzZsG/SlvxiioSxr0EDMCqEvvGaLq9/esJS8EyZ214byySIqRBoev55WOZlEyg==
+"@vuepress-reco/vuepress-plugin-pagation@^1.6.17":
+  version "1.6.17"
+  resolved "https://registry.npmmirror.com/@vuepress-reco/vuepress-plugin-pagation/-/vuepress-plugin-pagation-1.6.17.tgz#8882c72b93f9636af6bf98655537a037b581a81b"
+  integrity sha512-JL5ThROczUYc1P54SnZ7E1TG8rnOBIdDHlzPRHbgAhxatPb3dKp/s8QUpmR0YSpXnA5hJJS6LZFM1UAPsU6t+w==
 
 "@vuepress/core@1.9.9":
   version "1.9.9"
@@ -9056,15 +9056,15 @@ vuepress-plugin-smooth-scroll@^0.0.9:
   dependencies:
     smoothscroll-polyfill "^0.4.4"
 
-vuepress-theme-reco@^1.6.14:
-  version "1.6.14"
-  resolved "https://registry.npmjs.org/vuepress-theme-reco/-/vuepress-theme-reco-1.6.14.tgz"
-  integrity sha512-vGBgNBNStKFGyN4yZHDHjElv7Rq70PNG9HU02gvQADCda8/ukTvEt11K7yCR8A59XIN3EBlMqiUkb4Px6uWGpQ==
+vuepress-theme-reco@^1.6.17:
+  version "1.6.17"
+  resolved "https://registry.npmmirror.com/vuepress-theme-reco/-/vuepress-theme-reco-1.6.17.tgz#45c4f865b0f0e34d63fc4084e6fb4d8184046400"
+  integrity sha512-+5gj8IGriuXoGAXSgmsIkLzSrlwUyiGM2vBhZtKIsbfnvUj6iZ/GfcdI+JsI7b6mrJRvPxHNcssAWZjcEi2rcw==
   dependencies:
     "@vuepress-reco/core" "^1.6.14-beta.0"
     "@vuepress-reco/vuepress-plugin-back-to-top" "^1.6.13"
     "@vuepress-reco/vuepress-plugin-comments" "^1.6.13"
-    "@vuepress-reco/vuepress-plugin-pagation" "^1.6.13"
+    "@vuepress-reco/vuepress-plugin-pagation" "^1.6.17"
     "@vuepress/plugin-blog" "1.9.2"
     "@vuepress/plugin-medium-zoom" "1.5.0"
     docsearch.js "2.6.3"
