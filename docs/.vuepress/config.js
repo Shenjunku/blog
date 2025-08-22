@@ -45,9 +45,14 @@ module.exports = {
                     title: 'webpack配置',
                     collapsable: true,
                     children: ['webpack配置/webpack介绍', 'webpack配置/webpack之Loader', 'webpack配置/webpack之Plugin', 'webpack配置/webpack之入口和出口', 'webpack配置/webpack汇总']
-
-
                 },
+                {
+                    title: 'TS',
+                    collapsable: true,
+                    children: ['TS/TS介绍', 'TS/TS类型','TS/TS编译选项']
+                },
+
+ 
             ]
         },
         // 最后更新时间

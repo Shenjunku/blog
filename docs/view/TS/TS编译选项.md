@@ -3,7 +3,7 @@ title: TS-tsconfig.json
 date: 2022-8-03
 sidebar: 'auto'
 categories:
- - tsconfig.json
+ - ts
 tags:
  - ts
 ---
